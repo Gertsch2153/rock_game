@@ -2,60 +2,16 @@
 <html lang = "en">
   <head>
     <meta charset="utf-8">
-    <title> Computer Game </title>
+    <title> Rock Paper Scissors Game </title>
+    <link rel= "stylesheet" href="styles.css"> 
   </head>
   <body>
-    <script> 
-    var userChoice = prompt ("What's your play?");
-    var computerChoice = (Math.random());
-   // console.log (computerChoice)
-    if ( computerChoice >.66 ) {
-      computerChoice = "rock";
-    }
-    else if (computerChoice < .33) {
-      computerChoice = "paper";
-    }
-    else {
-      computerChoice = "scissors"
-    }
-    
-      console.log (computerChoice);
-    
-    
-   var compare = function (choice1, choice2) {
-
-   if ( choice1 === choice2) {
-    return "Tie"
-   }
-
+    <button id="rock"> Rock </button>
+    <button id="paper"> Paper </button>
+    <button id="scissors"> Scissors </button>
+    <div id = "display"></div> 
+    <script src="script.js"></script>
    
-   else if (choice1 === "Rock") {
-     if (choice2 === "Scissors"){
-       return "Rock wins User Wins!" 
-
-     }
-    else {return "Paper wins Computer Wins!"}
-   }
-   else if (choice1 === "Paper") {
-     if (choice2 === "Scissors"){
-       return "Scissors wins Computer Wins!" 
-
-     }
-    else {return "Paper wins User Wins!"}
-   }
-
-   else if (choice1 === "Scissors") {
-     if (choice2 === "paper"){
-       return "Scissors wins User Wins!" 
-
-     }
-    else {return "Rock wins Computer Wins!"}
-   }
-  }
-   console.log ("You chose: "+ userChoice)
-   console.log ("Computer chose" + computerChoice)
-   console.log ( compare(userChoice,computerChoice))
-   </script>
   </body>
   
 </html>
